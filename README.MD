@@ -1,22 +1,23 @@
-# retail-sales-eda-oasis-infobyte
-Exploratory Data Analysis of retail sales data using Python, Pandas, Matplotlib and Seaborn.
-# Retail Sales Exploratory Data Analysis
+# Customer Segmentation Analysis
 
 ## Project Overview
 
-This project performs Exploratory Data Analysis (EDA) on a retail sales dataset to identify important sales trends, customer purchasing patterns, and product category performance.
+This project performs customer segmentation using online retail transaction data.
 
-The analysis uses Python and popular data analysis and visualization libraries.
+The objective is to understand customer purchasing behaviour and group customers into meaningful segments using RFM analysis and K-Means clustering.
 
 ## Objectives
 
-- Analyze retail sales trends
-- Identify high and low performing periods
-- Analyze customer demographics
-- Study product category performance
-- Understand relationships between numerical variables
-- Generate business insights
-- Provide actionable recommendations
+- Analyze customer purchasing behaviour
+- Clean and prepare transaction data
+- Calculate Recency, Frequency, and Monetary values
+- Calculate Average Purchase Value
+- Calculate a simple Customer Lifetime Value proxy
+- Apply feature standardization
+- Determine the suitable number of clusters using the Elbow Method
+- Apply K-Means clustering
+- Profile customer segments
+- Develop marketing recommendations
 
 ## Technologies Used
 
@@ -25,67 +26,53 @@ The analysis uses Python and popular data analysis and visualization libraries.
 - NumPy
 - Matplotlib
 - Seaborn
+- Scikit-learn
 - Google Colab
 
-## Analysis Performed
+## Methodology
 
-### 1. Data Inspection
+1. Data loading and inspection
+2. Data cleaning
+3. Transaction value calculation
+4. RFM analysis
+5. Feature selection
+6. Standardization using StandardScaler
+7. Elbow Method
+8. K-Means clustering
+9. Cluster visualization
+10. Cluster profiling
+11. Business insights
+12. Marketing recommendations
 
-Checked the structure, columns, data types, and dimensions of the dataset.
+## RFM Analysis
 
-### 2. Data Quality Analysis
+### Recency
+Measures how recently a customer made a purchase.
 
-Checked for missing values and duplicate records.
+### Frequency
+Measures how frequently a customer made purchases.
 
-### 3. Descriptive Statistics
+### Monetary
+Measures the total amount spent by a customer.
 
-Calculated mean, median, mode, and standard deviation for important numerical variables.
+## Customer Segments
 
-### 4. Monthly Sales Analysis
+The analysis identified four customer segments:
 
-Analyzed monthly sales trends using line charts.
-
-### 5. Quarterly Sales Analysis
-
-Compared sales performance across quarters.
-
-### 6. Customer Demographic Analysis
-
-Analyzed sales and transaction activity based on gender and age groups.
-
-### 7. Product Category Analysis
-
-Compared transaction counts and total sales across product categories.
-
-### 8. Correlation Analysis
-
-Examined relationships between numerical variables using a correlation matrix and heatmap.
-
-### 9. Sales Distribution
-
-Analyzed the distribution of transaction amounts.
-
-## Key Insights
-
-The analysis identified important patterns in:
-
-- Monthly sales performance
-- Quarterly sales performance
-- Customer demographics
-- Product category performance
-- Transaction amount distribution
-- Relationships between numerical variables
+- High-Value Loyal Customers
+- Loyal Customers
+- Regular Customers
+- Inactive / Low-Value Customers
 
 ## Business Recommendations
 
-- Focus on high-performing product categories.
-- Improve the performance of low-performing categories.
-- Use customer segmentation for targeted marketing.
-- Prepare inventory and campaigns according to sales trends.
-- Monitor sales data regularly for data-driven decision making.
+- Provide loyalty rewards and exclusive offers to high-value customers.
+- Encourage loyal customers with personalized offers and loyalty programs.
+- Use discounts and product bundles to increase purchases from regular customers.
+- Use re-engagement campaigns and special offers to bring inactive customers back.
 
 ## Conclusion
 
-The project demonstrates how Exploratory Data Analysis can transform raw retail transaction data into meaningful business insights using Python.
+The analysis demonstrates how RFM analysis and K-Means clustering can be used to identify different customer groups.
 
-The findings can help businesses better understand customer behaviour, sales performance, and opportunities for improvement.
+These segments can help businesses create targeted marketing strategies, improve customer retention, and make better data-driven decisions.
